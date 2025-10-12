@@ -4,8 +4,8 @@ import Hello from './components/Hello'
 function App() {
   return (
     <div className="App">
-      <Hello name="Bob"/>
-      <Hello name="Mike"/>
+      <Hello name="Bob" greet="How are you?"/>
+      <Hello name="Mike" greet="How it is going?"/>
     </div>
   )
 }
