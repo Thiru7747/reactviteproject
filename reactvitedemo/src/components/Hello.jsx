@@ -1,5 +1,9 @@
-function Hello(){
-    return <h1>hello from the component</h1>;
+function Hello(props){
+    return (
+        <div>
+            <h1>hello {props.name}</h1>
+        </div>
+        )
 }
 
 export default Hello;
