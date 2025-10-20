@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Hello from "./components/Hello";
 import Cars from "./components/Cars";
+import Message from "./components/Message";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Hello name="Mike" greet="How it is going?" />
       <h1>Cars</h1>
       <Cars />
+      <Message />
     </div>
   );
 }
