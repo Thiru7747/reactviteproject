@@ -1,3 +1,5 @@
+import Car from "./Car";
+
 function Cars() {
   //   const cars = ["BMW", "Ferrari", "Mercedes", "Audi"];
   const cars = [
@@ -10,9 +12,7 @@ function Cars() {
     <>
       <ul>
         {cars.map((car) => (
-          <li key={car.name}>
-            {car.name} ${car.price}
-          </li>
+          <Car key={car.name} car={car} />
         ))}
       </ul>
     </>
