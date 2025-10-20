@@ -3,10 +3,10 @@ import Car from "./Car";
 function Cars() {
   //   const cars = ["BMW", "Ferrari", "Mercedes", "Audi"];
   const cars = [
-    { name: "BMW", price: "70000" },
-    { name: "Ferrari", price: "80000" },
-    { name: "Mercedes", price: "90000" },
-    { name: "Audi", price: "60000" },
+    { name: "BMW", price: "70000", soldout: true },
+    { name: "Ferrari", price: "80000", soldout: false },
+    { name: "Mercedes", price: "90000", soldout: true },
+    { name: "Audi", price: "60000", soldout: false },
   ];
   return (
     <>
