@@ -3,6 +3,7 @@ import Hello from "./components/Hello";
 import Cars from "./components/Cars";
 import Message from "./components/Message";
 import Counter from "./components/Counter";
+import Form from "./components/Form";
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
       <Cars />
       <Message />
       <Counter />
+      <br></br>
+      <Form />
     </div>
   );
 }
