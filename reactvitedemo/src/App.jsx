@@ -2,6 +2,7 @@ import { useState } from "react";
 import Hello from "./components/Hello";
 import Cars from "./components/Cars";
 import Message from "./components/Message";
+import Counter from "./components/Counter";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <h1>Cars</h1>
       <Cars />
       <Message />
+      <Counter />
     </div>
   );
 }
