@@ -1,5 +1,6 @@
 import { useState } from "react";
 import TodoItem from "./TodoItem";
+import "../css/style.css";
 
 function Todo() {
   const [todo, setTodo] = useState("");
@@ -11,6 +12,7 @@ function Todo() {
   }
   return (
     <>
+      <h1 className="header">Todos</h1>
       <form onSubmit={handleSubmit}>
         <input
           onChange={(e) => setTodo(e.target.value)}
