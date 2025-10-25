@@ -2,6 +2,10 @@ import { useState } from "react";
 
 function Form() {
   const [name, setName] = useState({ firstname: "", lastname: "" });
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log(name);
+  }
   return (
     <>
       <form>
@@ -15,6 +19,7 @@ function Form() {
           type="text"
           value={name.lastname}
         ></input>
+        <button onClick={(e) => handleSubmit(e)}>Submit</button>
       </form>
     </>
   );
