@@ -1,17 +1,17 @@
 import { useState } from "react";
 function Form({ todos, setTodos }) {
-  const [todo, setTodo] = useState("");
+  const [todo, setTodo] = useState({ name: "", done: false });
   function handleSubmit(e) {
     e.preventDefault();
     setTodos([...todos, todo]);
-    setTodo("");
+    setTodo({ name: "", done: false });
   }
   return (
     <form onSubmit={handleSubmit}>
       <input
-        onChange={(e) => setTodo(e.target.value)}
+        onChange={(e) => setTodo({ name: e.target.value, done: false })}
         type="text"
-        value={todo}
+        value={todo.name}
       ></input>
       <button type="submit">Add</button>
     </form>
