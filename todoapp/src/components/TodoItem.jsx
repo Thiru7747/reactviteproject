@@ -7,12 +7,12 @@ function TodoItem({ item, todos, setTodos }) {
   function handleClick(name) {
     setTodos(
       todos.map((todo) =>
-        todo.name === name ? { ...todo, completed: !todo.completed } : todo
+        todo.name === name ? { ...todo, done: !todo.done } : todo
       )
     );
   }
 
-  const className = item.completed ? styles.completed : "";
+  const className = item.done ? styles.completed : "";
   return (
     <h3>
       <span
